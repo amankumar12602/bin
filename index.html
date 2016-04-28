@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app="myApp">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+	<meta name="author" content="ankit singh" />
+
+
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    
+    
+      <!---- Calendar an main file  using Bootstrap ------>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+	
+	<link rel="stylesheet" href="css/travel.css" type="text/css" />
+    
+  
+	<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+	<link href="css/toaster.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+
+	
+	<title>Frugalbin | Home</title>
+
+</head>
+
+<body class="stretched" ng-cloak="">
+
+  <div data-ng-view="" id="ng-view" ></div>
+	<div id="wrapper" class="clearfix">
+
+	
+		<header id="header" class="transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+			
+					<div id="logo">
+						<a href="#" class="standard-logo" data-dark-logo="img/black.png"><img src="img/white.png" alt="frugalbin Logo" style="height:50px;"></a>
+						<a href="#" class="retina-logo" data-dark-logo="img/black.png"><img src="img/white.png" alt="frugalbin Logo"></a>
+					</div>
+                    
+					<nav id="primary-menu" class="style-4">
+
+						<ul>
+							<li ><a href="index.php"><div><i class="icon-home2"></i>How it Works?</div></a>	</li>
+                           
+                           <li><a href="#/login" data-toggle="modal" data-target="#myModal"><div><i class="icon-building"></i> <!--{{email}}-->Login</div></a></li>
+							<li>
+                                 
+                          
+                            
+                         <a href="#/signup" data-toggle="modal" data-target="#myModal1"><div><i class="icon-plane"></i>   Sign Up </div></a></li>
+                         
+                         
+                         
+							
+							
+						</ul>
+  <div id="top-cart">
+							<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
+							<div class="top-cart-content" style="    top: 40px !important;">
+								<div class="top-cart-title">
+									<h4>Shopping Bin</h4>
+								</div>
+								<div class="top-cart-items">
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-image">
+											<a href="#"><img src="http://canvashtml-cdn.semicolonweb.com/images/shop/small/1.jpg" /></a>
+										</div>
+										<div class="top-cart-item-desc">
+											<a href="#">Flight : Pune to Mumbai</a>
+											<span class="top-cart-item-price">Rs 1000.99</span>
+											<span class="top-cart-item-quantity">x 2</span>
+										</div>
+									</div>
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-image">
+											<a href="#"><img src="http://canvashtml-cdn.semicolonweb.com/images/shop/small/6.jpg"  /></a>
+										</div>
+										<div class="top-cart-item-desc">
+											<a href="#">Movie : Terminator</a>
+											<span class="top-cart-item-price">Rs 124</span>
+											<span class="top-cart-item-quantity">x 3</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-cart-action clearfix">
+									<span class="fleft top-checkout-price">Rs 1124</span>
+									<button class="button  button-small nomargin fright">View Bin</button>
+								</div>
+							</div>
+						</div><!-- #top-cart end -->
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</header>
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+
+			<div class="fslider" data-speed="3000" data-pause="2500" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 80% !important; top: 0; left: 0; background-color: #333;">
+				<div class="flexslider">
+					<div class="slider-wrap">
+						<div class="slide full-screen force-full-screen" style="background: url('img/1.jpg') center center; background-size: cover; height: 100% !important;"></div>
+						<div class="slide full-screen force-full-screen" style="background: url('img/2.jpg') center center; background-size: cover; height: 100% !important;"></div>
+						<div class="slide full-screen force-full-screen" style="background: url('img/3.jpg') center center; background-size: cover; height: 100% !important;"></div>
+                        <div class="slide full-screen force-full-screen" style="background: url('img/4.jpg') center center; background-size: cover; height: 100% !important;"></div>
+                        <div class="slide full-screen force-full-screen" style="background: url('img/5.jpg') center center; background-size: cover; height: 100% !important;"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+<!--- search part starts ---->
+<div id="travel-slider-overlay">
+
+				<div class="vertical-middle" >
+
+					<div class="container clearfix" style="margin-top:-110px !important;">
+
+						<div class="tabs travel-organiser-tabs clearfix">
+
+							<ul class="tab-nav clearfix">
+								<li><a href="#tab-flights"><i class="icon-plane"></i><span class="hidden-xs">Transport</span></a></li>
+								<li><a href="#tab-hotels"><i class="icon-building"></i><span class="hidden-xs">Accomodation</span></a></li>
+								<li><a href="#tab-flights-hotels"><i class="icon-building"></i><span class="hidden-xs">Entertainment</span></a></li>
+								<li><a href="#tab-holidays"><i class="icon-gift"></i><span class="hidden-xs">Food</span></a></li>
+                                <li><a href="#tab-holidays"><i class="icon-gift"></i><span class="hidden-xs">Advertisement</span></a></li>
+                                <li><a href="#tab-holidays"><i class="icon-gift"></i><span class="hidden-xs">Others</span></a></li>
+							</ul>
+                            
+                          
+							<div class="tab-container">
+
+								<div class="tab-content clearfix" id="tab-flights">
+								<!---	<div class="heading-block nobottomborder bottommargin-sm clearfix">
+										<h4 class="fleft">Book your Flights</h4>
+										<div class="btn-group fright">
+											<button type="button" class="btn btn-danger btn-sm bgcolor border-color">Domestic</button>
+											<button type="button" class="btn btn-default btn-sm">International</button>
+										</div>
+										<div class="clear"></div>
+									</div> ---->
+									<form action="#" method="post" class="nobottommargin" autocomplete="off">
+										<div class="row">
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+											
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
+                                                
+                                                
+                                                 <!----
+                        
+                        <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+                     ---->
+                                                
+                                                
+											</div>
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+											
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. New York, United States">
+											</div>
+                                            
+                                            <div class="input-daterange travel-date-group col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+											
+													<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
+											</div>
+                                            <div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+                                          
+												<button class="button  rightmargin-sm" >Search Flights</button>
+												
+											</div>
+                                            
+										
+											
+											
+										</div>
+									</form>
+								</div>
+								<div class="tab-content clearfix" id="tab-hotels">
+								
+								<form action="#" method="post" class="nobottommargin">
+										<div class="row">
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+											
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
+											</div>
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+												
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. New York, United States">
+											</div>
+                                            
+                                            <div class="input-daterange travel-date-group col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+												
+													<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
+											</div>
+                                            <div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+                                          
+												<button class="button  rightmargin-sm" style="margin: 11px 0px 0px 0px; ">Search Flights</button>
+												
+											</div>
+                                            
+										
+											
+											
+										</div>
+									</form>
+								</div>
+								<div class="tab-content clearfix" id="tab-flights-hotels">
+									
+									<form action="#" method="post" class="nobottommargin">
+										<div class="row">
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+												<label for="">From</label>
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
+											</div>
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+												<label for="">To</label>
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. New York, United States">
+											</div>
+                                            
+                                            <div class="input-daterange travel-date-group col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+													<label for="">Departure</label>
+													<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
+											</div>
+                                            <div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+                                            <label for=""></label>
+												<button class="button  rightmargin-sm" style="margin: 11px 0px 0px 0px; ">Search Flights</button>
+												
+											</div>
+                                            
+										
+											
+											
+										</div>
+									</form>
+								</div>
+								<div class="tab-content clearfix" id="tab-holidays">
+									
+								<form action="#" method="post" class="nobottommargin">
+										<div class="row">
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+												<label for="">From</label>
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
+											</div>
+											<div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+												<label for="">To</label>
+												<input type="text" value="" class="sm-form-control" placeholder="Eg. New York, United States">
+											</div>
+                                            
+                                            <div class="input-daterange travel-date-group col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+													<label for="">Departure</label>
+													<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
+											</div>
+                                            <div class="col-sm-3 col-xs-12 bottommargin-sm" style="padding:0px !important;">
+                                            <label for=""></label>
+												<button class="button  rightmargin-sm" style="margin: 11px 0px 0px 0px; ">Search Flights</button>
+												
+											</div>
+                                            
+										
+											
+											
+										</div>
+									</form>
+								</div>
+
+							</div>
+
+						</div>
+
+						<script>
+							$(function() {
+								$('.travel-date-group').datepicker({
+									autoclose: true,
+									startDate: "today"
+								});
+							});
+						</script>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+<!--search part ends  ---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</section>
+		<p class="text-success">&nbsp;</p>
+
+		
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<div class="heading-block center nobottomborder">
+						<span class="before-heading color">What are you in the Mood for.?</span>
+                        
+                        
+                       
+                        
+						<h2>Industries Covered</h2>
+					</div>
+
+				</div>
+
+				<div id="portfolio" class="portfolio-nomargin portfolio-full portfolio-overlay-open clearfix">
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/3.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Transportation</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-illustrations">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/4.jpg" >
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Hospitality</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-graphics pf-uielements">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/1.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Food</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-icons pf-illustrations">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/2.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Entertainment</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+                    
+                    
+                    	<article class="portfolio-item pf-icons pf-illustrations">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/9.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Logistics</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+
+	<article class="portfolio-item pf-icons pf-illustrations">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/6.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Advertisement</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+                    
+                    	<article class="portfolio-item pf-icons pf-illustrations">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/7.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Real Estate</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+                    
+                    	<article class="portfolio-item pf-icons pf-illustrations">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="img/industries/8.jpg">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3>Others</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</article>
+                    
+				</div>
+
+				<script type="text/javascript">
+
+					jQuery(window).load(function(){
+
+						var $container = $('#portfolio');
+
+						$container.isotope();
+
+						$(window).resize(function() {
+							$container.isotope('layout');
+						});
+
+					});
+
+				</script>
+</div></section>
+
+		
+		<footer id="footer" class="dark" style="background-color: #222;">
+
+			
+
+			
+		
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; Frugalbin.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+
+							
+
+						
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@frugalbin.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> frugalbinonskype
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/functions.js"></script>
+    <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/angular-animate.min.js" ></script>
+  <script src="js/toaster.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/data.js"></script>
+  <script src="app/directives.js"></script>
+  <script src="app/authCtrl.js"></script>
+</body>
+<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+</html>
